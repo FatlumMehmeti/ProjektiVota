@@ -14,7 +14,7 @@ public class Votat extends JPanel{
  			frame.setVisible(true);
 	  }
  		public void paintComponent(Graphics g){  
- 			g.setColor(Color.white);
+ 			g.setColor(Color.YELLOW);
  			g.fillRect(0,0,500,300);              //ngjyros dritaren grafike dhe perdor metoden private kandidatet 
  			kandidatet(g);
  		}
