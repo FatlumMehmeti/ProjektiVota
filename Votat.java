@@ -14,7 +14,7 @@ public class Votat extends JPanel{
  			frame.setVisible(true);
 	  }
  		public void paintComponent(Graphics g){  
- 			g.setColor(Color.YELLOW);
+ 			g.setColor(Color.black);
  			g.fillRect(0,0,500,300);              //ngjyros dritaren grafike dhe perdor metoden private kandidatet 
  			kandidatet(g);
  		}
@@ -41,7 +41,7 @@ public class Votat extends JPanel{
  		}
  		private void kandidatet(Graphics p) {	
            //shafqe te dhenat per kandidatin 1 dhe 2 si dhe numrin total te votave  te tyre 
- 			p.setColor(Color.black);         
+ 			p.setColor(Color.white);         
  			p.drawString("Kandidati 1 ka emrin \""+emri_1+"\" dhe ka adresen \""+adresa_1+"\" dhe ka kaq vota "+votat_per_1,10, 50);
  			p.drawString("Kandidati 2 ka emrin \""+emri_2+"\" dhe ka adresen \""+adresa_2+"\" dhe ka kaq vota "+votat_per_2, 10, 80);
  		}
