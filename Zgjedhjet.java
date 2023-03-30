@@ -21,13 +21,18 @@ public class Zgjedhjet {
 					("Shtypni 1 nese doni te votoni Kadidatin 1:\""+emri_1+"\" ose  shtypni 2 nese doni te votoni Kadidatin 2:\""+emri_2+"\""));
 			int votuesi_5 = Integer.valueOf(JOptionPane.showInputDialog
 					("Shtypni 1 nese doni te votoni Kadidatin 1:\""+emri_1+"\" ose  shtypni 2 nese doni te votoni Kadidatin 2:\""+emri_2+"\""));
-			Votat voto=new Votat();
+			
+			int votuesi_6 = Integer.valueOf(JOptionPane.showInputDialog
+					("Shtypni 1 nese doni te votoni Kadidatin 1:\""+emri_1+"\" ose  shtypni 2 nese doni te votoni Kadidatin 2:\""+emri_2+"\""))
+					Votat voto=new Votat();
 			/**Behet llogaritja e votave per kandidatin 1 dhe 2.*/
 			voto.numeroVota(votuesi_1);
 			voto.numeroVota(votuesi_2);
 			voto.numeroVota(votuesi_3);
 			voto.numeroVota(votuesi_4);
 			voto.numeroVota(votuesi_5);
+			voto.numeroVota(votuesi_6);
+
 		/*Behet shfaqja e emrave dhe adresave te kandidateve 1 dhe 2 dhe totali i votave ne nje dritare grafike.*/
 			voto.kandidati_1(emri_1,adresa_1);
 			voto.kandidati_2(emri_2,adresa_2);		
